@@ -111,6 +111,23 @@ We chose an Ackermann-style steering geometry because it allows the front wheels
 
 However, implementing a full Ackermann geometry would have required a wider front axle, potentially exceeding the maximum width allowed by the competition rules. Because of this, we decided to use a simplified version that still improved steering behavior while keeping the design compact and easier to manufacture.
 
+## Vehicle Photos
+
+<div align="center">
+
+| Front | Back |
+|:--:|:--:|
+| <img width="500" height="500" alt="Front" src="v-photos/Front.jpeg" /> | <img width="500" height="500" alt="Back" src="v-photos/Back.jpeg" /> |
+
+| Top | Bottom |
+|:--:|:--:|
+| <img width="500" height="500" alt="Top" src="v-photos/Top.jpeg" /> | <img width="500" height="500" alt="Bottom" src="v-photos/Bottom.jpeg" /> |
+
+| Left | Right |
+|:--:|:--:|
+| <img width="500" height="500" alt="Left" src="v-photos/Left.jpeg" /> | <img width="500" height="500" alt="Right" src="v-photos/Right.jpeg" /> |
+
+
 ### Traction System
 
 For the traction system, we decided to use a rear-wheel drive configuration powered by a DC motor with an integrated gearbox connected to a TB6612FNG motor driver. Both rear wheels are connected through the same drivetrain, which helped us keep the system simpler, lighter, and fully compliant with the WRO rules.
@@ -159,6 +176,70 @@ During the development process, we tested different ideas and components before 
 | Vision system | OpenMV H7 (UART) | HuskyLens (I2C) | OpenMV provided faster and more stable data during movement |
 
 One of the most important decisions was replacing the HuskyLens camera with the OpenMV H7. During testing, we noticed that the HuskyLens sometimes sent data too slowly, which caused unstable steering corrections and servo oscillation. After switching back to the OpenMV system, the robot behaved much more smoothly and consistently during autonomous navigation.**
+
+---
+#### 🔹 Structural Components (3D Design)
+
+<div align="center">
+
+| Central Sensor Mount | Side Sensor Mounts | Rear Support |
+|:--:|:--:|:--:|
+| <img width="250" height="250" alt="Central Sensor Mount" src="models/Soporte_sensor_central.png" /> | <img width="250" height="250" alt="Side Sensor Mounts" src="models/Soporte_sensores_laterales.png" /> | <img width="250" height="250" alt="Rear Support" src="models/Soporte_trasero.png" /> |
+
+| External Supports | Internal Supports | Directional Module |
+|:--:|:--:|:--:|
+| <img width="250" height="250" alt="External Supports" src="models/Soportes_externos.png" /> | <img width="250" height="250" alt="Internal Supports" src="models/Soportes_internos.png" /> | <img width="250" height="250" alt="Directional Module" src="models/Direccional.png" /> |
+
+| Lower Body | Upper Body | Full Base Structure |
+|:--:|:--:|:--:|
+| <img width="250" height="250" alt="Lower Body" src="models/Cuerpo_inferior.png" /> | <img width="250" height="250" alt="Upper Body" src="models/Cuerpo_superior.png" /> | <img width="250" height="250" alt="Full Base Structure" src="models/Estructura_base.png" /> |
+
+</div>
+
+---
+
+####  Main Chassis Structure
+
+<div align="center">
+
+| Lower Body | Upper Body |
+|:--:|:--:|
+| <img width="350" height="350" src="models/Cuerpo_inferior.png" /> | <img width="350" height="350" src="models/Cuerpo_superior.png" /> |
+
+</div>
+---
+
+####  Complete Aseembly
+
+<div align="center">
+
+| Full Base Structure |
+|:--:|
+| <img width="500" height="500" src="models/Estructura_base.png" /> |
+
+</div>
+
+---
+
+####  Steering Component
+
+<div align="center">
+
+| Directional Module |
+|:--:|
+| <img width="350" height="350" src="models/Direccional.png" /> |
+
+</div>
+---
+
+###  PCB & Wiring Implementation
+
+<div align="center">
+
+| PCB Design | PCB Schematic | Real PCB |
+|:--:|:--:|:--:|
+| <img width="300" height="300" src="schemes/PCB.png" /> | <img width="300" height="300" src="schemes/PCB_Schematic.png" /> | <img width="300" height="300" src="schemes/PCB_Real.jpeg" /> |
+
 
 ## Source Code
 
@@ -519,3 +600,14 @@ The repository includes the full Arduino code, wiring diagrams, PCB schematics, 
 | Li-ion Batteries | 2 |
 
 **Estimated total cost: approximately 154 USD**, depending on local suppliers and printing materials.
+
+##  Project Videos
+
+<div align="center">
+
+###  Open Challenge
+[![Watch the video](https://img.shields.io/badge/▶️%20Watch%20on-YouTube-red?logo=youtube&style=for-the-badge)](https://youtu.be/8vM5QeTv_Yk)
+
+###  Obstacle Challenge
+[![Watch the video](https://img.shields.io/badge/▶️%20Watch%20on-YouTube-red?logo=youtube&style=for-the-badge)](LINK_OBSTACLE_CHALLENGE_2026)
+
