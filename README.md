@@ -668,7 +668,7 @@ We hope this project can also help future teams learn more about robotics, engin
 
 <div align="center">
 
-# THANK YOU FOR READING
+# THANK YOU FOR READING (´▽｀)
 
 ### Thank you for taking the time to explore our project and follow our development process throughout the WRO 2026 season.
 
