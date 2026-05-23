@@ -10,7 +10,7 @@
   </tr>
   <tr>
     <td width="260">
-      <img src="T-photos/Coach_Eduardo.png" width="220">
+      <img src="team photos/Coach_Eduardo.png" width="220">
     </td>
     <td>
       <b>Age:</b> 40<br><br>
@@ -29,7 +29,7 @@
   </tr>
   <tr>
     <td width="260">
-      <img src="T-photos/Christopher.jpeg" width="220">
+      <img src="team photos/Christopher.jpeg" width="220">
     </td>
     <td>
       <b>Age:</b> 14<br><br>
@@ -48,7 +48,7 @@
   </tr>
   <tr>
     <td width="260">
-      <img src="T-photos/Barbara.jpeg" width="220">
+      <img src="team photos/Barbara.jpeg" width="220">
     </td>
     <td>
       <b>Age:</b> 13<br><br>
@@ -67,7 +67,7 @@
   </tr>
   <tr>
     <td width="260">
-      <img src="T-photos/Paulina.jpg" width="220">
+      <img src="team photos/Paulina.jpg" width="220">
     </td>
     <td>
       <b>Age:</b> 21<br><br>
