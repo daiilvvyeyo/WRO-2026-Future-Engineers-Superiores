@@ -164,7 +164,7 @@ After multiple test sessions, we found that an approximate 1:30 gear ratio gave 
 | 1:50 | Acceleration became too slow for completing laps efficiently |
 | 1:30 | Best balance between speed, control, and stability |
 
-**### Mechanical Trade-offs & Decisions
+#### Mechanical Trade-offs & Decisions
 
 During the development process, we tested different ideas and components before deciding on the final configuration of the robot. In several cases, we had to choose between simplicity, performance, reliability, and compliance with the WRO rules.
 
@@ -178,7 +178,7 @@ During the development process, we tested different ideas and components before 
 One of the most important decisions was replacing the HuskyLens camera with the OpenMV H7. During testing, we noticed that the HuskyLens sometimes sent data too slowly, which caused unstable steering corrections and servo oscillation. After switching back to the OpenMV system, the robot behaved much more smoothly and consistently during autonomous navigation.**
 
 ---
-#### 🔹 Structural Components (3D Design)
+####  Structural Components (3D Design)
 
 <div align="center">
 
@@ -611,3 +611,39 @@ The repository includes the full Arduino code, wiring diagrams, PCB schematics, 
 ###  Obstacle Challenge
 [![Watch the video](https://img.shields.io/badge/▶️%20Watch%20on-YouTube-red?logo=youtube&style=for-the-badge)](LINK_OBSTACLE_CHALLENGE_2026)
 
+# In conclusion (●'◡'●)
+
+This repository documents the complete development process of our WRO 2026 Future Engineers robot, from the first design concepts to the latest competition-ready version.
+
+Throughout the season, we redesigned almost every part of the system based on testing, failures, and continuous improvements. The project includes a fully custom 3D-printed chassis, Arduino Nano control system, OpenMV H7 vision processing, ultrasonic navigation, IMU-based lap tracking, and obstacle avoidance strategies developed specifically for the 2026 rules.
+
+Instead of focusing only on final results, this repository also documents the engineering decisions behind the robot, including hardware changes, software iterations, PCB problems, steering improvements, sensor calibration, and real testing data collected during development.
+
+Our goal was to build a robot that is not only competitive, but also understandable, reliable, and fully developed by our team through experimentation and iteration.
+
+This repository contains:
+- Full Arduino source code
+- Wiring diagrams and PCB schematics
+- 3D models and printable STL files
+- Robot photos and assembly references
+- Engineering documentation and testing results
+- Development history and design decisions
+
+We hope this project can also help future teams learn more about robotics, engineering design, and autonomous vehicle development.
+
+---
+
+<div align="center">
+
+# THANK YOU FOR READING
+
+### Thank you for taking the time to explore our project and follow our development process throughout the WRO 2026 season.
+
+### We truly appreciate your time, interest, and support.
+
+<br>
+
+**Team Superiores**  
+*WRO Future Engineers 2026*
+
+</div>
