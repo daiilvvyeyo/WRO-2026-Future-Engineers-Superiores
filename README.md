@@ -1,4 +1,83 @@
-# WRO-2026-Future-Engineers
+# WRO 2026 Future Engineers Superiores
+
+## Team Members
+
+<table align="center">
+  <tr>
+    <th colspan="2" align="left">
+      Eduardo Alvarado González — Coach & Founder
+    </th>
+  </tr>
+  <tr>
+    <td width="260">
+      <img src="T-photos/Coach_Eduardo.png" width="220">
+    </td>
+    <td>
+      <b>Age:</b> 40<br><br>
+      I founded <b>Los Grises Superiores</b> in 2014 with the goal of creating a team where students could learn engineering through real competition experience. Over the years we have participated in multiple WRO and TMR events, reaching both national and international stages. This season I mainly support the team in project organization, technical guidance, and helping the students improve their engineering process during development.
+    </td>
+  </tr>
+</table>
+
+---
+
+<table align="center">
+  <tr>
+    <th colspan="2" align="left">
+      Christopher Pérez Cortés — Programming & Electronics
+    </th>
+  </tr>
+  <tr>
+    <td width="260">
+      <img src="T-photos/Christopher.jpeg" width="220">
+    </td>
+    <td>
+      <b>Age:</b> 14<br><br>
+      I joined the robotics club this year after taking an intensive robotics course, and since then I have been learning a lot about electronics, Arduino programming, and 3D design in Onshape. In the team I mainly work on the robot code, sensor integration, and electronics. WRO 2026 is my first international robotics competition, so this season has been a big learning experience for me.
+    </td>
+  </tr>
+</table>
+
+---
+
+<table align="center">
+  <tr>
+    <th colspan="2" align="left">
+      Bárbara Daiana García Balboa — Design & Assembly
+    </th>
+  </tr>
+  <tr>
+    <td width="260">
+      <img src="T-photos/Barbara.jpeg" width="220">
+    </td>
+    <td>
+      <b>Age:</b> 13<br><br>
+      I joined the robotics club a few months ago after completing two robotics courses. My main role in the team is helping with the mechanical design, chassis assembly, and testing different structural ideas for the robot. This is my first robotics competition, so I have been learning how the engineering and competition process works while building the project together as a team.
+    </td>
+  </tr>
+</table>
+
+---
+
+<table align="center">
+  <tr>
+    <th colspan="2" align="left">
+      Paulina Ibarra Martínez — Design & Construction
+    </th>
+  </tr>
+  <tr>
+    <td width="260">
+      <img src="T-photos/Paulina.jpg" width="220">
+    </td>
+    <td>
+      <b>Age:</b> 21<br><br>
+      I have participated in robotics competitions for several years, including two Mexican Robotics Tournaments and previous WRO and TMR seasons as both competitor and junior coach. This year I support the team mainly in structural design, robot construction, and mentoring the newer members during development and testing. I also help organize ideas and improve the reliability of the robot during iterations.
+    </td>
+  </tr>
+</table>
+
+---
+
 
 ## Project Overview & Abstract
 
