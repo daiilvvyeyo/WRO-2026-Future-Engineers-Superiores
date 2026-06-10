@@ -634,15 +634,6 @@ The repository includes the full Arduino code, wiring diagrams, PCB schematics, 
 
 **Estimated total cost: approximately 154 USD**, depending on local suppliers and printing materials.
 
-##  Project Videos
-
-<div align="center">
-
-###  Open Challenge
-[![Watch the video](https://img.shields.io/badge/▶️%20Watch%20on-YouTube-red?logo=youtube&style=for-the-badge)](https://youtu.be/8vM5QeTv_Yk)
-
-###  Obstacle Challenge
-[![Watch the video](https://img.shields.io/badge/▶️%20Watch%20on-YouTube-red?logo=youtube&style=for-the-badge)](LINK_OBSTACLE_CHALLENGE_2026)
 
 # In conclusion (●'◡'●)
 
