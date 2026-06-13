@@ -87,7 +87,7 @@ The robot was built to autonomously complete the two Future Engineers challenges
 
 Throughout the development process, the team continuously tested and improved both the mechanical and software systems in order to adapt the robot to the new 2026 rule changes and achieve more reliable autonomous behavior.
 
-### Chassis Design & Iteration (in changes) 
+### Chassis Design & Iteration 
 
 Our first robot designs were based on a LEGO Mindstorms EV3 chassis. While it was easy to build and modify, we noticed several limitations during testing, especially related to weight, space distribution, and steering precision. The EV3 structure was also too restrictive for the type of custom design we wanted to achieve for the 2026 season.
 
@@ -201,7 +201,7 @@ During the development process, we tested different ideas and components before 
 One of the most important decisions was replacing the HuskyLens camera with the OpenMV H7. During testing, we noticed that the HuskyLens sometimes sent data too slowly, which caused unstable steering corrections and servo oscillation. After switching back to the OpenMV system, the robot behaved much more smoothly and consistently during autonomous navigation.**
 
 ---
-####  Structural Components (3D Design)
+####  Structural Components (3D Design) IN CHANGES
 
 <div align="center">
 
