@@ -632,7 +632,7 @@ The repository includes the full Arduino code, wiring diagrams, PCB schematics, 
 | Steren MOT-110 Servo | 1 |
 | Li-ion Batteries | 2 |
 
-**Estimated total cost: approximately 154 USD**, depending on local suppliers and printing materials.
+**Estimated total cost: approximately 154 USD**
 
 
 # In conclusion (●'◡'●)
