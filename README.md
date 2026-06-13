@@ -87,7 +87,7 @@ The robot was built to autonomously complete the two Future Engineers challenges
 
 Throughout the development process, the team continuously tested and improved both the mechanical and software systems in order to adapt the robot to the new 2026 rule changes and achieve more reliable autonomous behavior.
 
-### Chassis Design & Iteration
+### Chassis Design & Iteration (in changes) 
 
 Our first robot designs were based on a LEGO Mindstorms EV3 chassis. While it was easy to build and modify, we noticed several limitations during testing, especially related to weight, space distribution, and steering precision. The EV3 structure was also too restrictive for the type of custom design we wanted to achieve for the 2026 season.
 
