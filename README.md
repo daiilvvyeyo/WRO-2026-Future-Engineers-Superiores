@@ -255,7 +255,7 @@ One of the most important decisions was replacing the HuskyLens camera with the 
 </div>
 ---
 
-###  PCB & Wiring Implementation
+###  PCB & Wiring Implementation (changes to edit later)
 
 <div align="center">
 
