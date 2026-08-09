@@ -99,33 +99,45 @@ Later, we developed a third version focused on improving cornering performance i
 
 During the final reprint of the chassis using grey PLA filament, we encountered an unexpected problem: the drivetrain became stuck even though the motor was working correctly. After inspecting the structure, we realized that the new filament produced slightly tighter tolerances, causing friction around the rear axle housing. To solve this, we manually sanded the affected area until the shaft rotated smoothly again. After this issue, we started checking all moving parts after every print before assembling the robot.
 
+
 ### Steering System
 
-For the steering system, we decided to use an Ackermann-style configuration combined with a rack-and-pinion mechanism integrated into the front section of the chassis. The steering structure uses a LEGO Technic rack connected to a servo motor, allowing the robot to perform smooth and consistent turns during autonomous navigation.
+The robot uses an **Ackermann steering geometry** controlled by a rack-and-pinion mechanism. The steering system was developed through several iterations during the prototyping process.
 
-At the beginning of the season, we tested the robot using a standard SG90 micro servo. Although it worked during basic movement tests, we started noticing problems once the robot began making constant steering corrections at higher speeds. The servo occasionally responded inconsistently and showed signs of wear after repeated testing sessions.
+In the previous prototype, we used a **Steren MOT-110 micro servo** to control the steering mechanism. This version allowed us to test the basic steering geometry and evaluate the mechanical response of the system.
 
-To improve reliability, we replaced the SG90 with a Steren MOT-110 micro servo, which provided better torque consistency and more stable steering performance during continuous correction cycles. Since both servos used the same control interface, we were able to keep the same software structure without major code modifications.
+For the final vehicle, we decided to use an **SG90 micro servo**. The SG90 was selected for the final version because it provided the required steering movement while being compact and easy to integrate into the redesigned chassis.
 
-We chose an Ackermann-style steering geometry because it allows the front wheels to follow different turning radii during corners, reducing wheel friction and improving turning precision. This became especially important while testing the robot in tighter sections of the WRO track.
+The servo is connected to a **LEGO Technic rack-and-pinion mechanism (part 64781)**, which converts the servo's rotational movement into the linear movement required to turn the front wheels.
 
-However, implementing a full Ackermann geometry would have required a wider front axle, potentially exceeding the maximum width allowed by the competition rules. Because of this, we decided to use a simplified version that still improved steering behavior while keeping the design compact and easier to manufacture.
+The steering system follows **Ackermann geometry**, allowing the inner and outer front wheels to turn at different angles during a corner. This helps the vehicle maintain a more appropriate trajectory while navigating the track.
+
+The final steering configuration consists of:
+
+* **Servo motor:** SG90 micro servo
+* **Steering mechanism:** Rack-and-pinion
+* **Rack:** LEGO Technic part 64781
+* **Steering geometry:** Ackermann
+* **Control:** Arduino Nano
+
 
 ## Vehicle Photos
 
-<div align="center">
+<table>
+<tr>
+<td align="center"><strong>FRONT</strong><br><img src="vehicle%20photos/front.png" width="300"></td>
+<td align="center"><strong>BACK</strong><br><img src="vehicle%20photos/back.png" width="300"></td>
+</tr>
+<tr>
+<td align="center"><strong>LEFT</strong><br><img src="vehicle%20photos/left.png" width="300"></td>
+<td align="center"><strong>RIGHT</strong><br><img src="vehicle%20photos/right.png" width="300"></td>
+</tr>
+<tr>
+<td align="center"><strong>TOP</strong><br><img src="vehicle%20photos/top.png" width="300"></td>
+<td align="center"><strong>BOTTOM</strong><br><img src="vehicle%20photos/bottom.png" width="300"></td>
+</tr>
+</table>
 
-| Front | Back |
-|:--:|:--:|
-| <img width="500" height="500" alt="Front" src="v-photos/Front.jpeg" /> | <img width="500" height="500" alt="Back" src="v-photos/Back.jpeg" /> |
-
-| Top | Bottom |
-|:--:|:--:|
-| <img width="500" height="500" alt="Top" src="v-photos/Top.jpeg" /> | <img width="500" height="500" alt="Bottom" src="v-photos/Bottom.jpeg" /> |
-
-| Left | Right |
-|:--:|:--:|
-| <img width="500" height="500" alt="Left" src="v-photos/Left.jpeg" /> | <img width="500" height="500" alt="Right" src="v-photos/Right.jpeg" /> |
 
 
 # LEGO Set Use
