@@ -635,6 +635,21 @@ The repository includes the full Arduino code, wiring diagrams, PCB schematics, 
 **Estimated total cost: approximately 154 USD**
 
 
+## Vehicle Evolution
+
+Throughout this long process, we have successfully completed the robot today, August 8th—after numerous tests, prototypes, and even a burnt PCB along the way.
+
+|    View    |                     Before                    |                        After                        |
+| :--------: | :-------------------------------------------: | :-------------------------------------------------: |
+|  **Front** |  <img src="prototype/Front.jpeg" width="300"> |  <img src="vehicle%20photos/front.png" width="300"> |
+|  **Back**  |  <img src="prototype/Back.jpeg" width="300">  |  <img src="vehicle%20photos/back.png" width="300">  |
+|   **Top**  |   <img src="prototype/Top.jpeg" width="300">  |   <img src="vehicle%20photos/top.png" width="300">  |
+| **Bottom** | <img src="prototype/Bottom.jpeg" width="300"> | <img src="vehicle%20photos/bottom.png" width="300"> |
+|  **Left**  |  <img src="prototype/Left.jpeg" width="300">  |  <img src="vehicle%20photos/left.png" width="300">  |
+|  **Right** |  <img src="prototype/Right.jpeg" width="300"> |  <img src="vehicle%20photos/right.png" width="300"> |
+
+
+
 # In conclusion (●'◡'●)
 
 This repository documents the complete development process of our WRO 2026 Future Engineers robot, from the first design concepts to the latest competition-ready version.
