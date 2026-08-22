@@ -1,6 +1,6 @@
 # WRO 2026 Future Engineers Superiores
 <p align="center">
-  <img src="others/banner.png" alt="SUPERIORES" width="100%">
+  <img src="others/banner.png" alt="SUPERIORES" width="100%" style="border-radius: 20px;">
 </p>
 
 ## Team Members
