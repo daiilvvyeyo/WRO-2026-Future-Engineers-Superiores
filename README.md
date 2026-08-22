@@ -288,6 +288,15 @@ One issue we considered was battery voltage drop during long testing sessions. W
 
 ---
 
+## Ultrasonic Sensor Expansion
+
+During early testing with 3 sensors, we noticed that the robot couldn't measure distances accurately enough to maintain precise wall centering. To solve this and improve spatial awareness, we upgraded our setup to 5 HC-SR04 ultrasonic sensors: 2 on the right side, 2 on the left side, and 1 in the front center.
+
+| Sensor | Position | Purpose |
+| --- | --- | --- |
+| Front | Front center | Detect walls and corners ahead |
+| Left (×2) | Left side | Measure distance and alignment to left wall |
+| Right (×2) | Right side | Measure distance and alignment to right wall |
 ### Power Consumption
 
 | Component | Approx. Current |
@@ -295,7 +304,7 @@ One issue we considered was battery voltage drop during long testing sessions. W
 | Arduino Nano | 20 mA |
 | MPU6050 | 3.9 mA |
 | OpenMV H7 | ~280 mA |
-| HC-SR04 ×3 | ~45 mA |
+| HC-SR04 ×5 | ~75 mA |
 | Steering Servo | ~200 mA |
 | DC Motor | 800–1500 mA |
 
@@ -321,25 +330,17 @@ The electrical system was designed to keep the wiring as organized and compact a
 
 The MPU6050 communicates through I2C, while the OpenMV camera uses UART communication. This allowed us to keep the I2C bus dedicated only to the IMU and helped improve communication stability between modules.
 
+---
+
 ## PCB & Iteration Problems
 
 To keep the internal wiring cleaner and more organized, we designed a custom PCB to centralize all the electrical connections inside the robot. Compared to direct wiring, this helped us reduce cable clutter, simplify debugging, and improve overall reliability during movement.
 
-However, during the first PCB assembly, we encountered an important problem. After soldering all the components, the ultrasonic sensors started returning unstable and inconsistent distance values, even while the robot was completely stationary.
-
-After inspecting the board, we discovered that excess solder had accidentally created small bridges between nearby PCB traces, causing interference between the TRIG and ECHO signals of different sensors.
-
-To solve this, we carefully removed the excess solder using desoldering braid and re-soldered the affected areas with better control. Once the PCB was cleaned, the sensor readings became stable again and the issue disappeared completely.
-
-Although this problem delayed part of the testing process, it helped us improve both the electrical reliability of the robot and our soldering precision for future iterations.
-
----
-
-### Power & Reverse Polarity Incident
-
 During one of our testing sessions, we accidentally inserted the batteries backward into the power rail. This reverse polarity connection caused the Li-ion battery to short-circuit and emit smoke due to thermal overload. 
 
 Fortunately, none of our main sensors or microcontrollers suffered permanent damage. However, to prevent potential trace degradation or instability in the power lines, we solved this issue by replacing the damaged board with a spare custom PCB we already had available.
+
+Additionally, during our first PCB assembly, excess solder created small bridges between nearby PCB traces, causing interference between the TRIG and ECHO signals of the sensors. We solved this by removing the excess solder with desoldering braid and re-soldering the affected areas. Once cleaned, the readings stabilized completely.
 
 ---
 
@@ -347,17 +348,13 @@ Fortunately, none of our main sensors or microcontrollers suffered permanent dam
 
 ### HC-SR04 Ultrasonic Sensors
 
-We use three HC-SR04 ultrasonic sensors to detect walls and measure distances around the robot during navigation.
+During early testing with 3 sensors, we noticed that the robot couldn't measure distances accurately enough to maintain precise wall centering. To solve this and improve spatial awareness, we upgraded our setup to 5 HC-SR04 ultrasonic sensors: 2 on the right side, 2 on the left side, and 1 in the front center.
 
 | Sensor | Position | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | Front | Front center | Detect walls and corners ahead |
-| Left | Left side | Measure distance to side walls |
-| Right | Right side | Measure distance to side walls |
-
-We chose ultrasonic sensors instead of infrared sensors because the WRO walls are matte black, which can produce unreliable IR readings. Ultrasonic sensors provided more stable measurements regardless of surface color.
-
-During assembly, we positioned the sensors close to wheel height to reduce false floor detections while turning. We also noticed that at higher speeds the sensors occasionally produced noisy readings, so we implemented filtering in software to smooth sudden spikes.
+| Left (×2) | Left side | Measure distance and alignment to left wall |
+| Right (×2) | Right side | Measure distance and alignment to right wall |
 
 ---
 
