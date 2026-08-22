@@ -57,27 +57,6 @@
   </tr>
 </table>
 
----
-
-<table align="center">
-  <tr>
-    <th colspan="2" align="left">
-      Paulina Ibarra Martínez — Design & Construction
-    </th>
-  </tr>
-  <tr>
-    <td width="260">
-      <img src="team photos/Paulina.jpg" width="220">
-    </td>
-    <td>
-      <b>Age:</b> 21<br><br>
-      I have participated in robotics competitions for several years, including two Mexican Robotics Tournaments and previous WRO and TMR seasons as both competitor and junior coach. This year I support the team mainly in structural design, robot construction, and mentoring the newer members during development and testing. I also help organize ideas and improve the reliability of the robot during iterations.
-    </td>
-  </tr>
-</table>
-
----
-
 
 ## Project Overview & Abstract
 
