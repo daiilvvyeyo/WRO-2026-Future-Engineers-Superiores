@@ -463,6 +463,11 @@ We noticed that using the full camera image caused a lot of unstable detections.
 
 To solve this, we divided the image into different Regions of Interest (ROIs), so the OpenMV only focuses on the most important parts of the frame.
 
+---
+
+### WS2812B RGB LED Matrix Module (4x4 / 16-bit)
+
+To ensure reliable vision processing under varying ambient lighting conditions on the track, we integrated a 4x4 WS2812B RGB LED matrix module. Shadowing and uneven venue illumination previously affected color thresholding on the OpenMV H7 camera. By mounting this addressable LED matrix directly near the camera's field of view, we provide consistent, controlled lighting. This significantly improves the camera's ability to accurately detect and distinguish between red and green traffic pillars during the Obstacle Challenge.
 ## ROI	Purpose
 Upper ROI	Detect pillars early and prepare the turn
 Middle ROI	Main decision area for obstacle avoidance
@@ -471,6 +476,8 @@ Lower ROI	Ignore floor reflections and false detections
 When multiple objects appear, we select the largest blob because it is usually the closest obstacle. We also added a small delay (~300 ms) to avoid repeated detections during turns.
 
 This strategy made the robot much more stable and predictable during testing. Instead of improving the camera itself, we improved how the information was processed, which reduced false positives and gave us faster and smoother reactions.
+
+---
 
 ## Parking Strategy
 
