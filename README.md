@@ -335,6 +335,14 @@ Although this problem delayed part of the testing process, it helped us improve 
 
 ---
 
+### Power & Reverse Polarity Incident
+
+During one of our testing sessions, we accidentally inserted the batteries backward into the power rail. This reverse polarity connection caused the Li-ion battery to short-circuit and emit smoke due to thermal overload. 
+
+Fortunately, none of our main sensors or microcontrollers suffered permanent damage. However, to prevent potential trace degradation or instability in the power lines, we solved this issue by replacing the damaged board with a spare custom PCB we already had available.
+
+---
+
 ## Sensor Selection & Placement
 
 ### HC-SR04 Ultrasonic Sensors
