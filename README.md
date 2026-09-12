@@ -60,6 +60,13 @@
   </tr>
 </table>
 
+##  Track Challenges
+
+* **Open Challenge:** Complete 3 full laps of the track in the shortest time possible while maintaining lane alignment using sensors (distance and vision).
+* **Obstacle Challenge:** Navigate the track and dodge colored pillars in real time using computer vision (camera):
+  * **Red Pillars:** Dodge by passing on the right.
+  * **Green Pillars:** Dodge by passing on the left.
+* **Autonomous Parking:** Detect the designated parking space and perform an automatic parallel parking maneuver upon completion.
 
 ## Project Overview & Abstract
 
