@@ -5,6 +5,8 @@
 
 ## Team Members
 
+![Team Photo](team_photo.png)
+
 <table align="center">
   <tr>
     <th colspan="2" align="left">
@@ -109,54 +111,45 @@ The final steering configuration consists of:
 * **Steering geometry:** Ackermann
 * **Control:** Arduino Nano
 
-## Vehicle Photos (Before & After)
+## Vehicle Photos
 
-<table align="center">
-  <tr>
-    <th align="center" width="50%">Before</th>
-    <th align="center" width="50%">After</th>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="vehicle photos/front.jpg" width="100%" style="border-radius: 8px;"><br>
-      <sub><b>Front View (Old)</b></sub>
-    </td>
-    <td align="center">
-      <img src="vehicle photos/front.webp" width="100%" style="border-radius: 8px;"><br>
-      <sub><b>Front View (Current)</b></sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="vehicle photos/side.jpg" width="100%" style="border-radius: 8px;"><br>
-      <sub><b>Side View (Old)</b></sub>
-    </td>
-    <td align="center">
-      <img src="vehicle photos/side.webp" width="100%" style="border-radius: 8px;"><br>
-      <sub><b>Side View (Current)</b></sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="vehicle photos/top.jpg" width="100%" style="border-radius: 8px;"><br>
-      <sub><b>Top View (Old)</b></sub>
-    </td>
-    <td align="center">
-      <img src="vehicle photos/top.webp" width="100%" style="border-radius: 8px;"><br>
-      <sub><b>Top View (Current)</b></sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="vehicle photos/bottom.jpg" width="100%" style="border-radius: 8px;"><br>
-      <sub><b>Bottom View (Old)</b></sub>
-    </td>
-    <td align="center">
-      <img src="vehicle photos/bottom.webp" width="100%" style="border-radius: 8px;"><br>
-      <sub><b>Bottom View (Current)</b></sub>
-    </td>
-  </tr>
-</table>
+### Front
+
+| Before | After |
+|--------|-------|
+| ![Before](vehicle%20photos/front.png) | ![After](vehicle%20photos/front.webp) |
+
+### Back
+
+| Before | After |
+|--------|-------|
+| ![Before](vehicle%20photos/back.png) | ![After](vehicle%20photos/back.webp) |
+
+### Left
+
+| Before | After |
+|--------|-------|
+| ![Before](vehicle%20photos/left.png) | ![After](vehicle%20photos/left.webp) |
+
+### Right
+
+| Before | After |
+|--------|-------|
+| ![Before](vehicle%20photos/right.png) | ![After](vehicle%20photos/right.webp) |
+
+### Top
+
+| Before | After |
+|--------|-------|
+| ![Before](vehicle%20photos/top.png) | ![After](vehicle%20photos/top.webp) |
+
+### Bottom
+
+| Before | After |
+|--------|-------|
+| ![Before](vehicle%20photos/bottom.png) | ![After](vehicle%20photos/bottom.webp) |
+
+- Robot Weight: 0.710 kg
 
 ## Robot Components
 
@@ -700,18 +693,25 @@ The repository includes the full Arduino code, wiring diagrams, PCB schematics, 
 **Estimated total cost: approximately 154 USD**
 
 
-## Vehicle Evolution
+## Autonomous Driving Videos
 
-Throughout this long process, we have successfully completed the robot today, August 8th—after numerous tests, prototypes, and even a burnt PCB along the way.
+This section contains the official video documentation for Team Superiores in the WRO Future Engineers 2026 season.
 
-|    View    |                     Before                    |                        After                        |
-| :--------: | :-------------------------------------------: | :-------------------------------------------------: |
-|  **Front** |  <img src="prototype/Front.jpeg" width="300"> |  <img src="vehicle%20photos/front.png" width="300"> |
-|  **Back**  |  <img src="prototype/Back.jpeg" width="300">  |  <img src="vehicle%20photos/back.png" width="300">  |
-|   **Top**  |   <img src="prototype/Top.jpeg" width="300">  |   <img src="vehicle%20photos/top.png" width="300">  |
-| **Bottom** | <img src="prototype/Bottom.jpeg" width="300"> | <img src="vehicle%20photos/bottom.png" width="300"> |
-|  **Left**  |  <img src="prototype/Left.jpeg" width="300">  |  <img src="vehicle%20photos/left.png" width="300">  |
-|  **Right** |  <img src="prototype/Right.jpeg" width="300"> |  <img src="vehicle%20photos/right.png" width="300"> |
+### Open Challenge
+
+The vehicle completes the Open Challenge using autonomous wall navigation, orientation tracking and steering control.
+
+[![Watch the Open Challenge video](https://img.youtube.com/vi/diX7vBUeAKw/hqdefault.jpg)](https://www.youtube.com/watch?v=diX7vBUeAKw)
+
+[Watch the Open Challenge on YouTube](https://www.youtube.com/watch?v=diX7vBUeAKw)
+
+### Obstacle Challenge
+
+The vehicle performs the Obstacle Challenge using autonomous navigation and computer vision to identify and avoid the red and green traffic pillars.
+
+[![Watch the Obstacle Challenge video](https://img.youtube.com/vi/LjnSCSj2Bsk/hqdefault.jpg)](https://www.youtube.com/watch?v=LjnSCSj2Bsk)
+
+[Watch the Obstacle Challenge on YouTube](https://www.youtube.com/watch?v=LjnSCSj2Bsk)
 
 
 
