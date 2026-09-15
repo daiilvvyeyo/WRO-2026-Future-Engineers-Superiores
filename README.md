@@ -109,22 +109,53 @@ The final steering configuration consists of:
 * **Steering geometry:** Ackermann
 * **Control:** Arduino Nano
 
+## Vehicle Photos (Before & After)
 
-## Vehicle Photos
-
-<table>
-<tr>
-<td align="center"><strong>FRONT</strong><br><img src="vehicle%20photos/front.png" width="300"></td>
-<td align="center"><strong>BACK</strong><br><img src="vehicle%20photos/back.png" width="300"></td>
-</tr>
-<tr>
-<td align="center"><strong>LEFT</strong><br><img src="vehicle%20photos/left.png" width="300"></td>
-<td align="center"><strong>RIGHT</strong><br><img src="vehicle%20photos/right.png" width="300"></td>
-</tr>
-<tr>
-<td align="center"><strong>TOP</strong><br><img src="vehicle%20photos/top.png" width="300"></td>
-<td align="center"><strong>BOTTOM</strong><br><img src="vehicle%20photos/bottom.png" width="300"></td>
-</tr>
+<table align="center">
+  <tr>
+    <th align="center" width="50%">Before</th>
+    <th align="center" width="50%">After</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="vehicle photos/front.jpg" width="100%" style="border-radius: 8px;"><br>
+      <sub><b>Front View (Old)</b></sub>
+    </td>
+    <td align="center">
+      <img src="vehicle photos/front.webp" width="100%" style="border-radius: 8px;"><br>
+      <sub><b>Front View (Current)</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="vehicle photos/side.jpg" width="100%" style="border-radius: 8px;"><br>
+      <sub><b>Side View (Old)</b></sub>
+    </td>
+    <td align="center">
+      <img src="vehicle photos/side.webp" width="100%" style="border-radius: 8px;"><br>
+      <sub><b>Side View (Current)</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="vehicle photos/top.jpg" width="100%" style="border-radius: 8px;"><br>
+      <sub><b>Top View (Old)</b></sub>
+    </td>
+    <td align="center">
+      <img src="vehicle photos/top.webp" width="100%" style="border-radius: 8px;"><br>
+      <sub><b>Top View (Current)</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="vehicle photos/bottom.jpg" width="100%" style="border-radius: 8px;"><br>
+      <sub><b>Bottom View (Old)</b></sub>
+    </td>
+    <td align="center">
+      <img src="vehicle photos/bottom.webp" width="100%" style="border-radius: 8px;"><br>
+      <sub><b>Bottom View (Current)</b></sub>
+    </td>
+  </tr>
 </table>
 
 ## Robot Components
