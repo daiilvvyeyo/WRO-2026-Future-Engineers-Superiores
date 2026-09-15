@@ -5,7 +5,7 @@
 
 ## Team Members
 
-![Team Photo](team_photo.png)
+![Team Photo](team%20photos/team_photo.png)
 
 <table align="center">
   <tr>
@@ -70,6 +70,27 @@
   * **Green Pillars:** Dodge by passing on the left.
 * **Autonomous Parking:** Detect the designated parking space and perform an automatic parallel parking maneuver upon completion.
 
+  ## Autonomous Driving Videos
+
+This section contains the official video documentation for Team Superiores in the WRO Future Engineers 2026 season.
+
+### Open Challenge
+
+The vehicle completes the Open Challenge using autonomous wall navigation, orientation tracking and steering control.
+
+[![Watch the Open Challenge video](https://img.youtube.com/vi/diX7vBUeAKw/hqdefault.jpg)](https://www.youtube.com/watch?v=diX7vBUeAKw)
+
+[Watch the Open Challenge on YouTube](https://www.youtube.com/watch?v=diX7vBUeAKw)
+
+### Obstacle Challenge
+
+The vehicle performs the Obstacle Challenge using autonomous navigation and computer vision to identify and avoid the red and green traffic pillars.
+
+[![Watch the Obstacle Challenge video](https://img.youtube.com/vi/LjnSCSj2Bsk/hqdefault.jpg)](https://www.youtube.com/watch?v=LjnSCSj2Bsk)
+
+[Watch the Obstacle Challenge on YouTube](https://www.youtube.com/watch?v=LjnSCSj2Bsk)
+
+
 ## Project Overview & Abstract
 
 This project was developed as the evolution of our 2025 WRO Future Engineers robot, which successfully reached the international final. Based on the experience gained during that season, the entire vehicle was redesigned for 2026 using a fully 3D-printed chassis, an OpenMV H7 camera, and an Arduino Nano-based control system to improve stability, adaptability, and overall performance.
@@ -111,46 +132,42 @@ The final steering configuration consists of:
 * **Steering geometry:** Ackermann
 * **Control:** Arduino Nano
 
-## Vehicle Photos
+## Vehicle Photos (Before & After)
 
-### Front
-
-| Before | After |
-|--------|-------|
-| ![Before](vehicle%20photos/front.png) | ![After](vehicle%20photos/front.webp) |
-
-### Back
-
-| Before | After |
-|--------|-------|
-| ![Before](vehicle%20photos/back.png) | ![After](vehicle%20photos/back.webp) |
-
-### Left
-
-| Before | After |
-|--------|-------|
-| ![Before](vehicle%20photos/left.png) | ![After](vehicle%20photos/left.webp) |
-
-### Right
-
-| Before | After |
-|--------|-------|
-| ![Before](vehicle%20photos/right.png) | ![After](vehicle%20photos/right.webp) |
-
-### Top
-
-| Before | After |
-|--------|-------|
-| ![Before](vehicle%20photos/top.png) | ![After](vehicle%20photos/top.webp) |
-
-### Bottom
-
-| Before | After |
-|--------|-------|
-| ![Before](vehicle%20photos/bottom.png) | ![After](vehicle%20photos/bottom.webp) |
+<table>
+  <tr>
+    <th>Before</th>
+    <th>After</th>
+  </tr>
+  <tr>
+    <td><img src="vehicle%20photos/front.png" width="400"></td>
+    <td><img src="vehicle%20photos/front.webp" width="400"></td>
+  </tr>
+  <tr>
+    <td><img src="vehicle%20photos/back.png" width="400"></td>
+    <td><img src="vehicle%20photos/back.webp" width="400"></td>
+  </tr>
+  <tr>
+    <td><img src="vehicle%20photos/left.png" width="400"></td>
+    <td><img src="vehicle%20photos/left.webp" width="400"></td>
+  </tr>
+  <tr>
+    <td><img src="vehicle%20photos/right.png" width="400"></td>
+    <td><img src="vehicle%20photos/right.webp" width="400"></td>
+  </tr>
+  <tr>
+    <td><img src="vehicle%20photos/top.png" width="400"></td>
+    <td><img src="vehicle%20photos/top.webp" width="400"></td>
+  </tr>
+  <tr>
+    <td><img src="vehicle%20photos/bottom.png" width="400"></td>
+    <td><img src="vehicle%20photos/bottom.webp" width="400"></td>
+  </tr>
+</table>
 
 - Robot Weight: 0.710 kg
 
+  
 ## Robot Components
 
 | Component | Quantity | Main Function |
@@ -691,28 +708,6 @@ The repository includes the full Arduino code, wiring diagrams, PCB schematics, 
 | Li-ion Batteries | 2 |
 
 **Estimated total cost: approximately 154 USD**
-
-
-## Autonomous Driving Videos
-
-This section contains the official video documentation for Team Superiores in the WRO Future Engineers 2026 season.
-
-### Open Challenge
-
-The vehicle completes the Open Challenge using autonomous wall navigation, orientation tracking and steering control.
-
-[![Watch the Open Challenge video](https://img.youtube.com/vi/diX7vBUeAKw/hqdefault.jpg)](https://www.youtube.com/watch?v=diX7vBUeAKw)
-
-[Watch the Open Challenge on YouTube](https://www.youtube.com/watch?v=diX7vBUeAKw)
-
-### Obstacle Challenge
-
-The vehicle performs the Obstacle Challenge using autonomous navigation and computer vision to identify and avoid the red and green traffic pillars.
-
-[![Watch the Obstacle Challenge video](https://img.youtube.com/vi/LjnSCSj2Bsk/hqdefault.jpg)](https://www.youtube.com/watch?v=LjnSCSj2Bsk)
-
-[Watch the Obstacle Challenge on YouTube](https://www.youtube.com/watch?v=LjnSCSj2Bsk)
-
 
 
 # In conclusion (●'◡'●)
