@@ -5,7 +5,11 @@
 
 ## Team Members
 
-![Team Photo](team%20photos/team_photo.png)
+#### Team photo
+
+<p align="center">
+  <img src="team photos/team_photo.png" alt="Foto de equipo" width="600">
+</p>
 
 <table align="center">
   <tr>
