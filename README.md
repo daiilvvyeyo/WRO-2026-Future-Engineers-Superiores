@@ -70,25 +70,36 @@
   * **Green Pillars:** Dodge by passing on the left.
 * **Autonomous Parking:** Detect the designated parking space and perform an automatic parallel parking maneuver upon completion.
 
-  ## Autonomous Driving Videos
+## Project Videos
 
-This section contains the official video documentation for Team Superiores in the WRO Future Engineers 2026 season.
+The following videos show the vehicle driving autonomously during both WRO Future Engineers 2026 challenges. Additional video documentation is available in the [video/](video/) folder.
 
-### Open Challenge
-
-The vehicle completes the Open Challenge using autonomous wall navigation, orientation tracking and steering control.
-
-[![Watch the Open Challenge video](https://img.youtube.com/vi/diX7vBUeAKw/hqdefault.jpg)](https://www.youtube.com/watch?v=diX7vBUeAKw)
-
-[Watch the Open Challenge on YouTube](https://www.youtube.com/watch?v=diX7vBUeAKw)
-
-### Obstacle Challenge
-
-The vehicle performs the Obstacle Challenge using autonomous navigation and computer vision to identify and avoid the red and green traffic pillars.
-
-[![Watch the Obstacle Challenge video](https://img.youtube.com/vi/LjnSCSj2Bsk/hqdefault.jpg)](https://www.youtube.com/watch?v=LjnSCSj2Bsk)
-
-[Watch the Obstacle Challenge on YouTube](https://www.youtube.com/watch?v=LjnSCSj2Bsk)
+<table>
+  <tr>
+    <th>Open Challenge</th>
+    <th>Obstacle Challenge</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://www.youtube.com/watch?v=diX7vBUeAKw">
+        <img src="https://img.youtube.com/vi/diX7vBUeAKw/hqdefault.jpg" width="400">
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.youtube.com/watch?v=LjnSCSj2Bsk">
+        <img src="https://img.youtube.com/vi/LjnSCSj2Bsk/hqdefault.jpg" width="400">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://www.youtube.com/watch?v=diX7vBUeAKw">Watch on YouTube</a>
+    </td>
+    <td align="center">
+      <a href="https://www.youtube.com/watch?v=LjnSCSj2Bsk">Watch on YouTube</a>
+    </td>
+  </tr>
+</table>
 
 
 ## Project Overview & Abstract
@@ -732,6 +743,96 @@ The repository includes the full Arduino code, wiring diagrams, PCB schematics, 
 | Li-ion Batteries | 2 |
 
 **Estimated total cost: approximately 154 USD**
+
+## Project Folders
+
+The repository is organized into different sections containing the source code, documentation, designs, evidence, and media developed throughout the WRO Future Engineers 2026 project.
+
+<details>
+<summary><strong>codes/</strong></summary>
+
+Contains the source code developed for the autonomous vehicle. This section includes the programs responsible for vehicle control, sensor processing, movement, and autonomous navigation.
+
+</details>
+
+<details>
+<summary><strong>evidences/</strong></summary>
+
+Contains evidence documenting the development and testing process. This includes materials showing progress, experiments, testing sessions, modifications, and results throughout the project.
+
+</details>
+
+<details>
+<summary><strong>logbook/</strong></summary>
+
+Contains the project's development logbook. It documents the team's progress, decisions, problems, solutions, tests, modifications, and important milestones throughout the development process.
+
+</details>
+
+<details>
+<summary><strong>models/</strong></summary>
+
+Contains the digital and 3D models developed for the vehicle. These files include custom components, structural elements, and designs created during the development of the robot.
+
+</details>
+
+<details>
+<summary><strong>others/</strong></summary>
+
+Contains additional project materials and supporting files that do not belong to the main documentation categories. These resources complement the technical documentation of the project.
+
+</details>
+
+<details>
+<summary><strong>prototype/</strong></summary>
+
+Contains materials related to the prototype stages of the vehicle. This section documents early designs, experiments, structural changes, and different solutions tested before reaching the final design.
+
+</details>
+
+<details>
+<summary><strong>schemes/</strong></summary>
+
+Contains technical diagrams and schemes related to the vehicle. These files document connections, components, systems, and the organization of the robot's different elements.
+
+</details>
+
+<details>
+<summary><strong>team photos/</strong></summary>
+
+Contains photographs documenting the team throughout the project. The images show development sessions, testing, preparation, and other activities related to WRO Future Engineers 2026.
+
+</details>
+
+<details>
+<summary><strong>vehicle photos/</strong></summary>
+
+Contains photographs documenting the vehicle throughout its development. The images show different versions, construction stages, modifications, components, and details of the final robot.
+
+</details>
+
+<details>
+<summary><strong>videos/</strong></summary>
+
+Contains video documentation of the autonomous vehicle during the WRO Future Engineers 2026 challenges.
+
+### Open Challenge
+
+The vehicle operating autonomously during the Open Challenge.
+
+[![Open Challenge](https://img.youtube.com/vi/diX7vBUeAKw/hqdefault.jpg)](https://www.youtube.com/watch?v=diX7vBUeAKw)
+
+[Watch the Open Challenge on YouTube](https://www.youtube.com/watch?v=diX7vBUeAKw)
+
+### Obstacle Challenge
+
+The vehicle navigating autonomously while identifying and avoiding the red and green traffic pillars.
+
+[![Obstacle Challenge](https://img.youtube.com/vi/LjnSCSj2Bsk/hqdefault.jpg)](https://www.youtube.com/watch?v=LjnSCSj2Bsk)
+
+[Watch the Obstacle Challenge on YouTube](https://www.youtube.com/watch?v=LjnSCSj2Bsk)
+
+</details>
 
 
 # In conclusion (●'◡'●)
