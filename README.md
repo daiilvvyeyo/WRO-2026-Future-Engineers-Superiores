@@ -173,6 +173,45 @@ The final steering configuration consists of:
 | Main Switch | 1 | Motor / system power cutoff |
 | 2P Terminal Block | 1 | Power input (7.4V+) |
 
+## Code
+
+Our robot uses two main programs that work together. The Arduino Nano handles the distance sensors and LED strips, while the ESP32 acts as the main controller of the robot.
+
+### Arduino Nano — Sensors & LEDs
+
+The Arduino Nano works as an assistant to the ESP32. It measures the five ultrasonic sensors, controls three strips of eight LEDs, and communicates the sensor measurements to the ESP32 through I2C.
+
+**Main functions:**
+
+* Reads five ultrasonic distance sensors.
+* Controls 24 LEDs arranged in three strips of eight.
+* Sends distance measurements to the ESP32.
+* Receives the LED intensity level from the ESP32.
+* Uses I2C communication at address `0x08`.
+
+[View Arduino Nano Code](./codes/Nano_Sensores_I2C_3x8.ino)
+
+### ESP32 — Main Robot Control
+
+The ESP32 is the main controller of the robot. It receives the distance measurements from the Arduino Nano and uses them to control the motor, steering, speed, safety systems, lap counting, and final parking sequence.
+
+**Main functions:**
+
+* Receives data from the five distance sensors.
+* Controls the DC motor through the TB6612FNG.
+* Controls the SG90 steering servo.
+* Uses the BNO085 to track orientation and count three laps.
+* Uses the encoder to detect actual wheel movement.
+* Maintains the robot centered using PID control.
+* Detects walls and corners.
+* Adjusts speed according to track conditions.
+* Performs emergency reverse maneuvers.
+* Executes the final movement after completing three laps.
+* Provides an optional Wi-Fi dashboard for monitoring the robot.
+
+[View ESP32 Code](./codes/ESP32_Open_Optimizado.ino)
+
+
 
 # LEGO Set Use
 
