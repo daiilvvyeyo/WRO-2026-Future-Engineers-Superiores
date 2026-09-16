@@ -3,6 +3,11 @@
   <img src="others/banner.png" alt="SUPERIORES" width="100%" style="border-radius: 20px;">
 </p>
 
+> [!NOTE]
+> **Official Repository Notice**
+> This repository was temporarily used during the development phase. All final documentation, updated code, and project tracking have been centralized in the official repository:
+> https://github.com/Paumtz713/WRO-2026_FUTURE-ENGINEERS_SUPERIORES
+
 ##  Social Media
 
 <p align="center">
