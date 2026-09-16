@@ -676,19 +676,30 @@ We also documented and solved several hardware problems during development, incl
 
 ---
 
-# Repository Structure
+## Repository Structure
 
-```text
-WRO-2026-Future-Engineers-Superiores/
-├── README.md
-├── LICENSE
-├── evidences/
-├── models/
-├── others/
-├── prototype/
-├── schemes/
-├── team photos/
-└── vehicle photos/
+```mermaid
+flowchart TD
+    A["WRO-2026-Future-Engineers-Superiores"] --> B["README.md"]
+    A --> C["LICENSE"]
+
+    A --> D["evidences/"]
+    A --> E["logbook/"]
+    A --> F["models/"]
+    A --> G["others/"]
+    A --> H["prototype/"]
+    A --> I["schemes/"]
+    A --> J["team photos/"]
+    A --> K["vehicle photos/"]
+
+    D --> D1["Competition evidence"]
+    E --> E1["Development logbook"]
+    F --> F1["3D models"]
+    G --> G1["Additional project files"]
+    H --> H1["Robot prototypes"]
+    I --> I1["Electrical & wiring diagrams"]
+    J --> J1["Team photos"]
+    K --> K1["Vehicle photos"]
 ```
 
 The repository includes the full Arduino code, wiring diagrams, PCB schematics, STL files, and robot photos so the entire project can be reproduced and improved in the future.
