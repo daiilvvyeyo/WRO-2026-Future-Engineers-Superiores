@@ -3,6 +3,22 @@
   <img src="others/banner.png" alt="SUPERIORES" width="100%" style="border-radius: 20px;">
 </p>
 
+##  Social Media
+
+<p align="center">
+  <a href="https://www.facebook.com/share/19RiiDTZch/">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" width="45" alt="Facebook">
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://www.instagram.com/losgrisesrt/">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" width="45" alt="Instagram">
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://www.tiktok.com/@losgrisesrobotics">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" width="45" alt="TikTok">
+  </a>
+</p>
+
 ## Team Members
 
 #### Team photo
