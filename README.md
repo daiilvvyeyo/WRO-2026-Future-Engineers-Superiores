@@ -145,6 +145,12 @@ The final steering configuration consists of:
 
 - Robot Weight: 0.710 kg
 
+## Robot 360º
+
+<p align="center">
+  <img src="./others/gif.gif" alt="Robot 360º" width="700">
+</p>
+
   
 ## Robot Components
 
