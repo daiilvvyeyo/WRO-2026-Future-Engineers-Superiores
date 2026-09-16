@@ -297,7 +297,7 @@ During the development process, we tested different ideas and components before 
 One of the most important decisions was replacing the HuskyLens camera with the OpenMV H7. During testing, we noticed that the HuskyLens sometimes sent data too slowly, which caused unstable steering corrections and servo oscillation. After switching back to the OpenMV system, the robot behaved much more smoothly and consistently during autonomous navigation.**
 
 
-####  Structural Components (3D Design) IN CHANGES
+####  Structural Components (3D Design) 
 
 <div align="center">
 
@@ -351,14 +351,26 @@ One of the most important decisions was replacing the HuskyLens camera with the 
 </div>
 ---
 
-###  PCB & Wiring Implementation (changes to edit later)
+## PCB & Wiring Implementation
 
-<div align="center">
-
-| PCB Design | PCB Schematic | Real PCB |
-|:--:|:--:|:--:|
-| <img width="300" height="300" src="schemes/PCB.png" /> | <img width="300" height="300" src="schemes/PCB_Schematic.png" /> | <img width="300" height="300" src="schemes/PCB_Real.png" /> |
-
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <strong>PCB Design</strong><br><br>
+      <img src="schemes/PCB.png" width="100%">
+    </td>
+    <td align="center" width="50%">
+      <strong>Real PCB</strong><br><br>
+      <img src="schemes/PCB_Real.png" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <strong>PCB Schematic</strong><br><br>
+      <img src="schemes/PCB_Schematic.png" width="100%">
+    </td>
+  </tr>
+</table>
 
 ## Source Code
 
