@@ -132,38 +132,16 @@ The final steering configuration consists of:
 * **Steering geometry:** Ackermann
 * **Control:** Arduino Nano
 
-## Vehicle Photos (Before & After)
 
-<table>
-  <tr>
-    <th>Before</th>
-    <th>After</th>
-  </tr>
-  <tr>
-    <td><img src="vehicle%20photos/front.png" width="400"></td>
-    <td><img src="vehicle%20photos/front.webp" width="400"></td>
-  </tr>
-  <tr>
-    <td><img src="vehicle%20photos/back.png" width="400"></td>
-    <td><img src="vehicle%20photos/back.webp" width="400"></td>
-  </tr>
-  <tr>
-    <td><img src="vehicle%20photos/left.png" width="400"></td>
-    <td><img src="vehicle%20photos/left.webp" width="400"></td>
-  </tr>
-  <tr>
-    <td><img src="vehicle%20photos/right.png" width="400"></td>
-    <td><img src="vehicle%20photos/right.webp" width="400"></td>
-  </tr>
-  <tr>
-    <td><img src="vehicle%20photos/top.png" width="400"></td>
-    <td><img src="vehicle%20photos/top.webp" width="400"></td>
-  </tr>
-  <tr>
-    <td><img src="vehicle%20photos/bottom.png" width="400"></td>
-    <td><img src="vehicle%20photos/bottom.webp" width="400"></td>
-  </tr>
-</table>
+ ## Robot Photos
+
+| Front | Back | Left |
+|:---:|:---:|:---:|
+| <img src="./vehicle%20photos/frontog.png" width="250"> | <img src="./vehicle%20photos/backog.png" width="250"> | <img src="./vehicle%20photos/leftog.png" width="250"> |
+
+| Right | Top | Bottom |
+|:---:|:---:|:---:|
+| <img src="./vehicle%20photos/rightog.png" width="250"> | <img src="./vehicle%20photos/topog.png" width="250"> | <img src="./vehicle%20photos/bottomog.png" width="250"> |
 
 - Robot Weight: 0.710 kg
 
@@ -229,7 +207,7 @@ After multiple test sessions, we found that an approximate 1:30 gear ratio gave 
 | Wheel configuration | Both rear wheels connected together |
 | Selected gear ratio | Approx. 1:30 |
 
----
+
 
 ### Speed Testing
 
@@ -239,7 +217,7 @@ After multiple test sessions, we found that an approximate 1:30 gear ratio gave 
 | 130 | ~0.36 m/s | Normal track navigation |
 | 150 | ~0.44 m/s | Open straight sections |
 
----
+
 
 ### Gear Ratio Comparison
 
@@ -262,7 +240,7 @@ During the development process, we tested different ideas and components before 
 
 One of the most important decisions was replacing the HuskyLens camera with the OpenMV H7. During testing, we noticed that the HuskyLens sometimes sent data too slowly, which caused unstable steering corrections and servo oscillation. After switching back to the OpenMV system, the robot behaved much more smoothly and consistently during autonomous navigation.**
 
----
+
 ####  Structural Components (3D Design) IN CHANGES
 
 <div align="center">
@@ -340,7 +318,7 @@ Some of the main functions implemented in our code include:
 - Obstacle avoidance logic
 - Parking sequence development
 
----
+
 
 # Criterion 2 — Power & Sensor Architecture
 
@@ -357,7 +335,7 @@ We used a Mini 560 step-down regulator to provide a stable 5V supply for the ele
 
 One issue we considered was battery voltage drop during long testing sessions. When the voltage became too low, the robot started losing motor performance and sensor stability. Because of this, we added a small digital voltmeter directly on the chassis to monitor battery voltage before every run.
 
----
+
 
 ## Ultrasonic Sensor Expansion
 
@@ -379,7 +357,7 @@ During early testing with 3 sensors, we noticed that the robot couldn't measure 
 | Steering Servo | ~200 mA |
 | DC Motor | 800–1500 mA |
 
----
+
 
 ## Wiring Diagram
 
@@ -401,7 +379,7 @@ The electrical system was designed to keep the wiring as organized and compact a
 
 The MPU6050 communicates through I2C, while the OpenMV camera uses UART communication. This allowed us to keep the I2C bus dedicated only to the IMU and helped improve communication stability between modules.
 
----
+
 
 ## PCB & Iteration Problems
 
@@ -413,7 +391,7 @@ Fortunately, none of our main sensors or microcontrollers suffered permanent dam
 
 Additionally, during our first PCB assembly, excess solder created small bridges between nearby PCB traces, causing interference between the TRIG and ECHO signals of the sensors. We solved this by removing the excess solder with desoldering braid and re-soldering the affected areas. Once cleaned, the readings stabilized completely.
 
----
+
 
 ## Sensor Selection & Placement
 
@@ -427,7 +405,7 @@ During early testing with 3 sensors, we noticed that the robot couldn't measure 
 | Left (×2) | Left side | Measure distance and alignment to left wall |
 | Right (×2) | Right side | Measure distance and alignment to right wall |
 
----
+
 
 ### MPU6050 IMU
 
@@ -441,7 +419,7 @@ Some of the main functions of the IMU in our robot are:
 
 Before every run, the robot performs a short calibration process while remaining completely still. This allows the IMU to calculate sensor offsets and improve accuracy during movement.
 
----
+
 
 ### Camera — OpenMV H7
 
@@ -479,7 +457,7 @@ Before testing or competing, we calibrate different parts of the robot to make s
 
 These calibration steps helped us improve steering accuracy, sensor stability, and overall consistency during autonomous runs.
 
----
+
 
 # Criterion 3 — Software Architecture & Obstacle Strategy
 
@@ -500,7 +478,7 @@ To keep the code organized, we divided the program into different modules.
 | Drive | `avanzar()`, `girarSuave()` | Controls movement and steering |
 | Start Sequence | `faseInicio` | Handles startup alignment |
 
----
+
 
 ## State Machine
 
@@ -516,7 +494,7 @@ To organize the robot behavior, we created different operating states depending 
 
 The robot constantly switches between these states depending on sensor readings and track conditions. Emergency actions always have the highest priority to avoid crashes.
 
----
+
 
 ## Open Challenge Algorithm
 
@@ -534,7 +512,7 @@ We noticed that using the full camera image caused a lot of unstable detections.
 
 To solve this, we divided the image into different Regions of Interest (ROIs), so the OpenMV only focuses on the most important parts of the frame.
 
----
+
 
 ### WS2812B RGB LED Matrix Module (4x4 / 16-bit)
 
@@ -548,7 +526,7 @@ When multiple objects appear, we select the largest blob because it is usually t
 
 This strategy made the robot much more stable and predictable during testing. Instead of improving the camera itself, we improved how the information was processed, which reduced false positives and gave us faster and smoother reactions.
 
----
+
 
 ## Parking Strategy
 
@@ -574,7 +552,7 @@ To improve consistency, we reduced the parking speed and combined fixed steering
 
 Future updates will include better parking detection and more dynamic corrections before the final competition.
 
----
+
 
 ## Lateral Control Strategy
 
@@ -605,7 +583,7 @@ After many tests, we tuned the control constants to reduce oscillation while sti
 
 We started with a low proportional gain and gradually increased it until the robot began oscillating. Then we reduced it slightly and added derivative damping to make the steering smoother and more stable.
 
----
+
 
 # Testing & Tuning
 
@@ -645,7 +623,19 @@ Our 2026 robot is not just a small upgrade from the 2025 version. We rebuilt alm
 
 One of the biggest changes happened mid-season when we replaced the HuskyLens with the OpenMV H7 again. During testing, the HuskyLens was not sending enough continuous data, causing the steering servo to oscillate. Switching back to OpenMV solved the issue and gave us much smoother and more stable control.
 
----
+## Vehicle Evolution — Before & After
+
+| View | Before | After |
+|:---:|:---:|:---:|
+| **Front** | <img src="./vehicle%20photos/front.png" width="250"> | <img src="./vehicle%20photos/frontog.png" width="250"> |
+| **Back** | <img src="./vehicle%20photos/back.png" width="250"> | <img src="./vehicle%20photos/backog.png" width="250"> |
+| **Left** | <img src="./vehicle%20photos/left.png" width="250"> | <img src="./vehicle%20photos/leftog.png" width="250"> |
+| **Right** | <img src="./vehicle%20photos/right.png" width="250"> | <img src="./vehicle%20photos/rightog.png" width="250"> |
+| **Top** | <img src="./vehicle%20photos/top.png" width="250"> | <img src="./vehicle%20photos/topog.png" width="250"> |
+| **Bottom** | <img src="./vehicle%20photos/bottom.png" width="250"> | <img src="./vehicle%20photos/bottomog.png" width="250"> |
+
+
+
 
 # Engineering Decisions & Trade-offs
 
@@ -660,7 +650,7 @@ Throughout development, we constantly balanced simplicity, reliability, and perf
 
 We focused on building a system that every team member could fully understand and maintain instead of relying on overly complex solutions.
 
----
+
 
 # Risk Analysis
 
@@ -674,37 +664,15 @@ We focused on building a system that every team member could fully understand an
 
 We also documented and solved several hardware problems during development, including PCB solder bridges and drivetrain binding after reprinting the chassis.
 
----
+## Wiring Diagram
 
-## Repository Structure
-
-```mermaid
-flowchart TD
-    A["WRO-2026-Future-Engineers-Superiores"] --> B["README.md"]
-    A --> C["LICENSE"]
-
-    A --> D["evidences/"]
-    A --> E["logbook/"]
-    A --> F["models/"]
-    A --> G["others/"]
-    A --> H["prototype/"]
-    A --> I["schemes/"]
-    A --> J["team photos/"]
-    A --> K["vehicle photos/"]
-
-    D --> D1["Competition evidence"]
-    E --> E1["Development logbook"]
-    F --> F1["3D models"]
-    G --> G1["Additional project files"]
-    H --> H1["Robot prototypes"]
-    I --> I1["Electrical & wiring diagrams"]
-    J --> J1["Team photos"]
-    K --> K1["Vehicle photos"]
-```
+<p align="center">
+  <img src="others/scheme.png" alt="Robot Wiring Diagram" width="900">
+</p>
 
 The repository includes the full Arduino code, wiring diagrams, PCB schematics, STL files, and robot photos so the entire project can be reproduced and improved in the future.
 
----
+
 
 # Components & Cost
 
@@ -741,7 +709,7 @@ This repository contains:
 
 We hope this project can also help future teams learn more about robotics, engineering design, and autonomous vehicle development.
 
----
+
 
 <div align="center">
 
